@@ -4,7 +4,7 @@ import gtav from "../assets/gta.webp";
 import fifa from "../assets/fifa.webp";
 import fighter from "../assets/fighter.webp";
 import cyber from "../assets/cyber.jpeg";
-import cod from "../assets/cod.png";
+import cod from "../assets/Cod.png";
 import heroimg from "../assets/eswapx_1000x1000_1-removebg-preview.png";
 import xbox from "../assets/download-removebg-preview.png";
 import unity from "../assets/ue-logo-1400x788-1400x788-8f185e1e3635-removebg-preview.png";

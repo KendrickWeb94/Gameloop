@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
  import Topics from "../Components/Topics";
 import { gamer } from "../assets/images";
-import { IoStarOutline } from "react-icons/io5";
 
 const Newsletter = () => {
   return (
@@ -17,7 +16,7 @@ const Newsletter = () => {
           <div className=" space-y-3">
             <div className=" p-3 bg-red-500/10 rounded-3xl gap-4 nunito flex items-center text-xl font-medium">
            <span className=" smooth animate-spin">
-            <IoStarOutline />
+      
             </span>   Top Topics
             </div>
           <Topics  topic=" Explore the advancements in gaming technology over time, from the early days of arcade machines and home consoles to modern-day high-performance "/>

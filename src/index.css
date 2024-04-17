@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .smooth {
+    @apply transition-all delay-500 duration-500 ease-in-out ;
+  }
+}
+
 /* Header Fonts */
 .exodus {
   font-family: 'EudoxusSans-Bold', sans-serif;}

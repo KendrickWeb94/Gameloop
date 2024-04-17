@@ -1,56 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
+ import Topics from "../Components/Topics";
 import { gamer } from "../assets/images";
+import { IoStarOutline } from "react-icons/io5";
 
 const Newsletter = () => {
   return (
-    <div className="relative w-full p-5 min-h-[100vh]">
-       <div className=" absolute  right-0  ">
-          <div className=" bg-red-500/60 w-[200px]  absolute h-[200px] blur-[210px]"></div>
-          <div className=" bg-yellow-400 w-[400px] absolute h-[200px] blur-[210px]"></div>
-        </div>
-      <div className="z-50  flex items-center flex-col justify-center max-w-[1100px] w-full">
-        <div className="flex flex-wrap  items-center flex-row-reverse gap-20 justify-between">
-          <div className="relative overflow-hidden rounded-md h-[400px] max-w-[300px]">
-            <img src={gamer} className=" object-cover h-full w-full " />
-            <div className=" absolute bottom-0 flex items-center justify-between bg-black p-4 w-full">
-            <h3 className="uppercas mushin font-bold text-white">
-            OUR LATEST BLOG 
-            </h3>
-            <p className="poppins text-xs text-zinc-300">
-            Feb 18th 2023
-            </p>
+    <div className="relative w-full mx-auto max-w-[93%] p-5 min-h-[100vh]">
+        <div className="grid md:items-center justify-between gap-16   md:grid-cols-2 grid-cols-2">
+          <div className=" max-w-[700px] h-[400px] overflow-hidden rounded-md shadow-lg shadow-red-500/45">
+            <img src={gamer} alt="" className="h-[75%] object-cover w-full" />
+          <div className="h-[25%] w-full  space-y-4 bg-red-500/40 p-5">
+            <h1 className=" text-gray-500 uppercase nunito font-bold">12/6/2023</h1>
+            <p className=" nunito text-[1.4vw] text-gray-400 font-semibold">The Decline in Game plays and Settings at an all time high</p>
+          </div>
+          </div>
+          <div className=" space-y-3">
+            <div className=" p-3 bg-red-500/10 rounded-3xl gap-4 nunito flex items-center text-xl font-medium">
+           <span className=" smooth animate-spin">
+            <IoStarOutline />
+            </span>   Top Topics
             </div>
-          </div>
-          <div>
-            <h3 className="uppercase text-2xl nunito font-semibold">
-              The
-                <span className=" text-red-500/45 font-extrabold">"BIG"</span>
-              Decline in gameplay and graphics
-            </h3>
-            <p className="mt-5 nunito max-w-[400px] text-sm">
-              In the ever-evolving landscape of the gaming industry, the
-              sentiment that "games aren't just good anymore" encapsulates the
-              transformative journey that digital entertainment has.. Players
-              now find themselves not just navigating through games but stepping
-              into a dynamic, interconnected metaverse where social
-              interactions, entertainment, and gaming seamlessly converge
-            </p>
-            <p className="mt-5 nunito max-w-[400px] float-end text-sm">
-              In the ever-evolving landscape of the gaming industry, the
-              sentiment that "games aren't just good anymore" encapsulates the
-              transformative journey that digital entertainment has u
-            </p>
-            <p className="mt-24 nunito max-w-[400px]  text-sm">
-              In the ever-evolving landscape of the gaming industry, the
-              sentiment that "games aren't just good anymore" encapsulates the
-              transformative journey that digital entertainment has u
-            </p>
+          <Topics  topic=" Explore the advancements in gaming technology over time, from the early days of arcade machines and home consoles to modern-day high-performance "/>
+          <Topics  topic="  Analyze the rise and fall of gaming trends such as specific genres (e.g., platformers, first-person shooters, battle royale), gaming platforms (e.g., consoles, PC, mobile), and gaming phenomena (e.g., eSports, livestreaming, virtual reality)"/>
+          <Topics  topic="Investigate the economic factors behind the growth and decline of the gaming industry. This could include examining sales data, "/>
+          <Topics  topic="  Explore the cultural significance of gaming and how it has evolved over time. Discuss how gaming has influenced popular culture"/>
+       
+        
           </div>
         </div>
-        <p className="mt-5 nunito max-w-[1000px]  text-sm">
-       
-        </p>
-      </div>
     </div>
   );
 };

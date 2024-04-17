@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-8 max-w-[89%] w-full mx-auto">
       <div className="container mx-auto px-4">
-        <div className="grid exo grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+        <div className="grid exo grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-10">
           {/* Column 1 */}
           <div>
             <h2 className=" text-lg text-red-500/50 font-bold mb-4">Services</h2>
@@ -63,21 +63,7 @@ const Footer = () => {
               <li className="nunito py-1">Foundation C</li>
             </ul>
           </div>
-          <div>
-          <h2 className=" text-lg text-red-500/55 font-bold mb-4">Tips</h2>
-            <ul className="text-gray-200 text-sm">
-            <li className="nunito py-1">Firm & blemish-free</li>
-              <li className="nunito py-1">Pleasant aroma</li>
-              <li className="nunito py-1">No mold or decay</li>
-              <li className="nunito py-1">Vibrant color</li>
-              <li className="nunito py-1">Consider seasonality</li>
-              <li className="nunito py-1">Ask for recommendations</li>
-              <li className="nunito py-1">Ripe & juicy</li>
-              <li className="nunito py-1">Check ripeness</li>
-              <li className="nunito py-1">Proper storage</li>
-              <li className="nunito py-1">Handle with care</li>
-            </ul>
-          </div>
+   
         </div>
       </div>
     </footer>

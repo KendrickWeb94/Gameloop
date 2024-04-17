@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Header Fonts */
+.exodus {
+  font-family: 'EudoxusSans-Bold', sans-serif;}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;}
+
+.nunito {
+  font-family: 'Nunito';}
+
+.lato {
+  font-family: 'Lato', sans-serif;}
+
+.garamond {
+  font-family: 'EB Garamond', serif;}
+
+.playfair {
+  font-family: 'Playfair Display', serif;}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;}
+
+.sacramento {
+  font-family: 'Sacramento', cursive;}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;}
+
+.merriweather {
+  font-family: 'Merriweather', serif;}
+
+
+.rajdhani {
+  font-family: 'Rajdhani', sans-serif;}
+
+.gothic {
+  font-family: 'Didact Gothic', sans-serif;}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;}
+
+.ephesis {
+  font-family: 'Ephesis', cursive;}
+
+.merriweather {
+  font-family: 'Merriweather', serif;}
+
+.mulish {
+  font-family: 'Mulish', sans-serif;}
+
+.noticia {
+  font-family: 'Noticia Text', serif;}
+
+.Open-sans {
+  font-family: 'Open Sans', sans-serif;}
+
+
+.raleway {
+  font-family: 'Raleway', sans-serif;}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;}
+
+.work-sans {
+  font-family: 'Work Sans', sans-serif;}
+
+
+@font-face {
+  font-family: 'EudoxusSans-Bold';
+  src: url('./assets/Eudoxus-Sans-font/EudoxusSans-Bold.woff') format('woff'),
+    url('./assets/Eudoxus-Sans-font/EudoxusSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'EudoxusSans-ExtraBold';
+  src: url('./assets/Eudoxus-Sans-font/EudoxusSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'EudoxusSans-Regular';
+  src: url('./assets/Eudoxus-Sans-font/EudoxusSans-Regular.woff') format('woff');
+  font-weight: normal;
+}
+
+/* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+  width: 1px;
+  background: black;
+  /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  /* Set the color of the thumb (the moving part of the scrollbar) */
+  border-radius: 1px;
+  /* Optional: Add rounded corners to the thumb */
+}
+
+video{
+  height: auto;
+  width: 100%;
+}
+
+.backdrop-bg{
+  background-color: rgba(239, 68, 68, .2)
+}
+
+
+.grid-cat{
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+} 
+.nav{
+  z-index: 9999999999;
+}
+
+.bleh{
+  background: linear-gradient(to right, #422006, #ef4444);
+
+}

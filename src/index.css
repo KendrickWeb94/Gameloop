@@ -4,129 +4,118 @@
 
 @layer components {
   .smooth {
-    @apply transition-all delay-500 duration-500 ease-in-out ;
+    @apply transition-all delay-500 duration-500 ease-in-out;
+  }
+  .flex-center {
+    @apply flex items-center flex-col justify-center;
   }
 }
 
-/* Header Fonts */
-.exodus {
-  font-family: 'EudoxusSans-Bold', sans-serif;}
-
-.open-sans {
-  font-family: 'Open Sans', sans-serif;}
-
-.nunito {
-  font-family: 'Nunito';}
-
-.lato {
-  font-family: 'Lato', sans-serif;}
-
-.garamond {
-  font-family: 'EB Garamond', serif;}
-
-.playfair {
-  font-family: 'Playfair Display', serif;}
-
-.montserrat {
-  font-family: 'Montserrat', sans-serif;}
-
-.sacramento {
-  font-family: 'Sacramento', cursive;}
-
-.roboto {
-  font-family: 'Roboto', sans-serif;}
-
-.merriweather {
-  font-family: 'Merriweather', serif;}
-
-
-.rajdhani {
-  font-family: 'Rajdhani', sans-serif;}
-
-.gothic {
-  font-family: 'Didact Gothic', sans-serif;}
-
-.poppins {
-  font-family: 'Poppins', sans-serif;}
-
-.ephesis {
-  font-family: 'Ephesis', cursive;}
-
-.merriweather {
-  font-family: 'Merriweather', serif;}
-
-.mulish {
-  font-family: 'Mulish', sans-serif;}
-
-.noticia {
-  font-family: 'Noticia Text', serif;}
-
-.Open-sans {
-  font-family: 'Open Sans', sans-serif;}
-
-
-.raleway {
-  font-family: 'Raleway', sans-serif;}
-
-.ubuntu {
-  font-family: 'Ubuntu', sans-serif;}
-
-.work-sans {
-  font-family: 'Work Sans', sans-serif;}
-
-
 @font-face {
-  font-family: 'EudoxusSans-Bold';
-  src: url('./assets/Eudoxus-Sans-font/EudoxusSans-Bold.woff') format('woff'),
-    url('./assets/Eudoxus-Sans-font/EudoxusSans-Bold.ttf') format('truetype');
+  font-family: "Roboto-bold";
+  src: url("./assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype"),
+    url("./assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'EudoxusSans-ExtraBold';
-  src: url('./assets/Eudoxus-Sans-font/EudoxusSans-ExtraBold.woff') format('woff');
-  font-weight: 800;
+  font-family: "Roboto-medium";
+  src: url("./assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: 'EudoxusSans-Regular';
-  src: url('./assets/Eudoxus-Sans-font/EudoxusSans-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: "Roboto-Regular";
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
-/* For Webkit browsers like Chrome and Safari */
+@font-face {
+  font-family: "inter-Bold";
+  src: url("./assets/fonts/Inter/static/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "inter-extrabold";
+  src: url("./assets/fonts/Inter/static/Inter_18pt-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "inter-medium";
+  src: url("./assets/fonts/Inter/static/Inter_18pt-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "inter-regular";
+  src: url("./assets/fonts/Inter/static/Inter_18pt-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "inter-thin";
+  src: url("./assets/fonts/Inter/static/Inter_18pt-Thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+.logo__container{
+  font-family: 'Roboto-bold';
+}
+
+body {
+  font-family: "Roboto-Regular";
+}
+
+.inter-b {
+  font-family: "inter-Bold";
+}
+
+.inter-eb {
+  font-family: "inter-extrabold";
+}
+.inter-md {
+  font-family: "inter-medium";
+}
+.inter-rg {
+  font-family: "inter-regular";
+}
+.inter-th {
+  font-family: "inter-thin";
+}
+
 ::-webkit-scrollbar {
   width: 1px;
   background: black;
-  /* Set the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: black;
-  /* Set the color of the thumb (the moving part of the scrollbar) */
   border-radius: 1px;
-  /* Optional: Add rounded corners to the thumb */
 }
 
-video{
+video {
   height: auto;
   width: 100%;
 }
 
-.backdrop-bg{
-  background-color: rgba(239, 68, 68, .2)
+.backdrop-bg {
+  background-color: rgba(239, 68, 68, 0.2);
 }
 
-
-.grid-cat{
+.grid-cat {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-
-} 
-.nav{
-  z-index: 9999999999;
 }
 
-.bleh{
-  background: linear-gradient(to right, #422006, #ef4444);
-
+.z-xl {
+  z-index: 9999999;
+}
+.z-lg {
+  z-index: 99999;
+}
+.z-md {
+  z-index: 999;
+}
+.z-sm {
+  z-index: 99;
 }

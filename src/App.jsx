@@ -1,23 +1,20 @@
-import Hero from "./Layout/Hero";
-import Categories from "./Layout/Categories";
-import DownloadApp from "./Layout/DownloadApp";
-import Contact from "./Layout/Contact";
-import Testimonials from "./Layout/Testimonials";
-import Metaverse from "./Layout/Mataverse";
-import Newsletter from "./Layout/Newsletter";
-import Footer from "./Layout/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import Games from "./routes/Games";
+import Features from "./routes/Features";
+import OnlineStreaming from "./routes/OnlineStreaming";
 
 const App = () => {
   return (
-    <div className="bg-black h-auto overflow-hidden w-full text-white flex flex-col items-center justify-center ">
-      <Hero />
-      <Categories />
-      <DownloadApp />
-      <Contact />
-      <Testimonials />
-      <Metaverse />
-      <Newsletter />
-      <Footer />
+    <div className="w-full bg-gradient-to-r from-zinc-950 to-slate-900">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="routes/games" element={<Games />} />
+          <Route path="routes/features" element={<Features />} />
+          <Route path="routes/online-streaming" element={<OnlineStreaming />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };

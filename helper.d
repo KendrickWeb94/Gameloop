@@ -4,7 +4,7 @@ const MyComponent = () => (
   <div>
     <ReactTyped strings={["Here you can find anything"]} typeSpeed={40} />
     <br />
-
+ 
     <ReactTyped
       strings={[
         "Search for products",
